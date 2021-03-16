@@ -54,3 +54,13 @@ const text = [
     uis auctor elit sed vulputate mi sit amet. Aliquam vestibulum morbi blandit cursus risus at. Et odio 
     pellentesque diam volutpat commodo sed egestas egestas fringilla. Phasellus faucibus scelerisque eleifend donec`
 ]
+
+
+const amount = document.getElementById('amount').value;
+const loremText = document.querySelector('.lorem-text');
+const form = document.querySelector('.lorem-form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    console.log('hello');
+});
