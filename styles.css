@@ -12,4 +12,48 @@ html {
 body {
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.section-center {
+    max-width: 1440px;
+    margin: auto;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.lorem-form {
+    padding: 2rem;
+}
+
+label,
+input,
+button {
+    margin-right: 2rem;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    width: 70px;
+    padding: 0.3rem 0.5rem;
+}
+
+.btn {
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    color: white;
+    background: rgb(34, 34, 34);
+    cursor: pointer;
 }
