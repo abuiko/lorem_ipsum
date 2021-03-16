@@ -60,19 +60,16 @@ const amount = document.getElementById('amount');
 const loremText = document.querySelector('.lorem-text');
 const form = document.querySelector('.lorem-form');
 
-const randomNumber = () => {
-    const random = Math.floor(Math.random() * text.length);
-    return random;
-}
-
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const value = parseInt(amount.value);
+    const random = Math.floor(Math.random() * text.length);
 
     if (value > 9 || isNaN(value) || value < 0) {
-        loremText.innerHTML = text[randomNumber()];
+        loremText.textContent = text[random];
     } else {
-
+        let tempText = text.slice(0, value);
+        loremText.textContent = tempText;
     }
 });
