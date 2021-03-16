@@ -56,3 +56,11 @@ input {
     background: rgb(34, 34, 34);
     cursor: pointer;
 }
+
+.lorem-text {
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    padding-top: 3rem;
+
+}

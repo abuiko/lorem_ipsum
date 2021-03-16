@@ -56,11 +56,23 @@ const text = [
 ]
 
 
-const amount = document.getElementById('amount').value;
+const amount = document.getElementById('amount');
 const loremText = document.querySelector('.lorem-text');
 const form = document.querySelector('.lorem-form');
 
+const randomNumber = () => {
+    const random = Math.floor(Math.random() * text.length);
+    return random;
+}
+
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
-    console.log('hello');
+    const value = parseInt(amount.value);
+
+    if (value > 9 || isNaN(value) || value < 0) {
+        loremText.innerHTML = text[randomNumber()];
+    } else {
+
+    }
 });
